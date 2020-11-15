@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-page-wrapp d-flex">
+      <div class="login-form-wrap d-flex align-items-center">
+        <div class="form-card card ml-auto mb-auto">
+          <div class="card-body">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              id="form-registr-btn"
+            >
+              Create New Account
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              id="form-log-in-button"
+            >
+              log In
+            </button>
+            <div class="card-body" id="form-log-in">
+              <form name="loginForm">
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    data-required="email"
+                    data-invalid-message="Please provide valid email example@example.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                    data-required="password"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <!-- /.login-form-wrap -->
+            <div class="card-body" id="form-registr">
+              <form name="registr-form">
+                <div class="form-group">
+                  <label>First and last name</label>
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First name"
+                        id="fr-name"
+                        value="Yevhenii"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last name"
+                        id="ls-name"
+                        value="Serdechniuk"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="nickname">Nickname</label>
+                  <input
+                    name="nickname"
+                    type="nickname"
+                    class="form-control"
+                    placeholder="Enter nickmname"
+                    id="nickname"
+                    value="Dlicz"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    id="email-rg"
+                    data-required="email"
+                    data-invalid-message="Please provide valid email example@example.com"
+                    value="Necrolick@online.ua"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                    id="password-rg"
+                    data-required="password"
+                    value="99123sem"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="confirm">Confirm</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                    id="confir-rg"
+                    data-required="password"
+                    value="99123sem"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Residence</label>
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Country"
+                        id="country"
+                      />
+                      <ul class="list-group" id="ul_countries"></ul>
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="City"
+                        id="city"
+                        disabled
+                      />
+                      <ul class="list-group" id="ul_cities"></ul>
+                    </div>
+                  </div>
+                </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <legend class="col-form-label col-sm pt-0">Gender</legend>
+                    <div class="col-sm-10">
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gridRadios"
+                          id="gridRadios1"
+                          value="male"
+                          checked
+                        />
+                        <label class="form-check-label" for="gridRadios1">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gridRadios"
+                          id="gridRadios2"
+                          value="female"
+                        />
+                        <label class="form-check-label" for="gridRadios2">
+                          Female
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form-group">
+                  <input
+                    type="phone"
+                    class="form-control"
+                    placeholder="Phone"
+                    id="phone"
+                    value="7311175452"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Date of birth</label>
+                  <div class="form-row">
+                    <div class="col-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="DD"
+                        id="day"
+                        maxlength="2"
+                        value="19"
+                      />
+                    </div>
+                    <div class="col-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="MM"
+                        id="month"
+                        maxlength="2"
+                        value="11"
+                      />
+                    </div>
+                    <div class="col-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="YYYY"
+                        id="year"
+                        maxlength="4"
+                        value="1987"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.Registr-form-wrap -->
+      <div class="login-greeting-screen d-flex align-items-center">
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam. A.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
